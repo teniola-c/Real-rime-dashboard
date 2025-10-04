@@ -1,0 +1,9 @@
+streamlit>=1.36
+plotly>=5.22
+yfinance>=0.2.43
+python-dotenv>=1.0.1
+websocket-client>=1.8.0
+meteostat>=1.6.8
+requests>=2.32.3
+pandas>=2.2.2
+numpy>=2.0.2
