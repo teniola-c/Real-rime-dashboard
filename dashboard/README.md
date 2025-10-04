@@ -1,27 +1,41 @@
-# Live Markets & Weather Dashboard — V2 (Streamlit)
+Project Overview
 
-Beautiful, interactive dashboard for **Stocks**, **Crypto**, and **Weather**, plus a **Portfolio** tab
-with live P/L and allocation. Now includes **multi-location weather** picker.
+This interactive dashboard — Markets • Weather • Football — is a real-time, data-driven web app built with Python and Streamlit.
+It combines multiple live data sources to give users a single, dynamic interface for monitoring markets, weather, and sports updates.
 
-## Highlights
-- Stock tiles (auto-refresh) with sparklines
-- Crypto prices via Binance WebSocket (true realtime)
-- Weather: select **multiple cities** from presets or add custom
-- Portfolio: editable table, live P/L, allocation donut
-- Price alerts via JSON
-- Clean, modern styling
+Key Features
+📈 Markets
 
-## Quick Start
-1) Create `.env` from `.env.example` and put your OpenWeatherMap key.
-2) Install:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3) Run:
-   ```bash
-   streamlit run app.py
-   ```
+Displays real-time stock and cryptocurrency prices using TradingView charts.
 
-## Tips
-- In the sidebar, adjust refresh interval and alerts.
-- Use Binance symbols for crypto (e.g., BTCUSDT, ETHUSDT).
+Fetches live stock data via Yahoo Finance and real-time crypto updates from Binance WebSocket.
+
+Includes customizable KPI tiles with sparkline trend charts and price alerts.
+
+🌦️ Weather
+
+Shows current weather, past 7-day historical trends, and 5-day forecasts using OpenWeatherMap and Meteostat APIs.
+
+Includes temperature, precipitation, and average high/low visualizations.
+
+Supports multiple cities and custom location entry.
+
+⚽ Football
+
+Displays live matches, standings, and top scorers for major leagues like the Premier League, La Liga, Serie A, and more.
+
+Integrates with Football-Data.org API for real-time sports analytics.
+
+Technology Stack
+
+Python
+
+Streamlit (frontend)
+
+Plotly (data visualization)
+
+Yahoo Finance, Binance, OpenWeatherMap, Meteostat, Football-Data.org
+
+Purpose
+
+This dashboard demonstrates the power of combining real-time data APIs and interactive visualization to deliver actionable insights across multiple domains — finance, weather, and sports — all in one seamless experience.
